@@ -4,9 +4,9 @@ This is modified QGIS Automap from VAM HQ and adjusted for RBB Seasonal Monitor 
 
 Below is the list
 
-Region 1: TJK, KGZ, AFG and PAK<br>
-Region 2: IND, BTN, NPL, BGD, LKA, MMR, THA, KHM, LAO, VNM, PHL and DPRK<br>
-Region 3: IDN, TLS, PNG and SLB
+- **Region 1**: TJK, KGZ, AFG and PAK<br>
+- **Region 2**: IND, BTN, NPL, BGD, LKA, MMR, THA, KHM, LAO, VNM, PHL and DPRK<br>
+- **Region 3**: IDN, TLS, PNG and SLB
 
 ## Setting up environment
 
@@ -18,40 +18,39 @@ The code for calculating SPI is written in Python 3. It is recommended to use ei
 
 	* Follow Installing Anaconda on [macOS](https://docs.anaconda.com/anaconda/install/mac-os/) guideline and for [Linux](https://docs.anaconda.com/anaconda/install/linux/) and [Windows](https://docs.anaconda.com/anaconda/install/windows/)
 
-	!!! tip
-	    Or you can use [Miniconda](https://docs.conda.io/en/latest/miniconda.html) for [macOS](https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.pkg) or [Linux](https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh) and [Windows](https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86_64.exe). And follow the installation guideline for [macOS](https://conda.io/projects/conda/en/latest/user-guide/install/macos.html), [Linux](https://conda.io/projects/conda/en/latest/user-guide/install/linux.html) and [Windows](https://conda.io/projects/conda/en/latest/user-guide/install/windows.html)
+	> Or you can use [Miniconda](https://docs.conda.io/en/latest/miniconda.html) for [macOS](https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.pkg) or [Linux](https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh) and [Windows](https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86_64.exe). And follow the installation guideline for [macOS](https://conda.io/projects/conda/en/latest/user-guide/install/macos.html), [Linux](https://conda.io/projects/conda/en/latest/user-guide/install/linux.html) and [Windows](https://conda.io/projects/conda/en/latest/user-guide/install/windows.html)
 
 2. Download and install [QGIS](https://qgis.org/en/site/index.html) Long Term Release 3.16.8 on your machine for [macOS](https://qgis.org/downloads/macos/qgis-macos-ltr.dmg) or [Linux](https://qgis.org/en/site/forusers/alldownloads.html#linux) or [Windows](https://qgis.org/downloads/QGIS-OSGeo4W-3.16.8-4.msi).
 
 3. Download **automap_RBB** folder and it's content. The folder consist of:
 
 ``` bash
-├── csv						# List of product, code for ach product and color ramp.
-├── maps					# Default output folder for maps
-├── products				# Default input folder with GeoTIFF files
-├── scripts					# Python scripts
+├── csv				# List of product, code for ach product and color ramp.
+├── maps			# Default output folder for maps
+├── products			# Default input folder with GeoTIFF files
+├── scripts			# Python scripts
 │   ├── __pycache__
 │   │   ├── **/*.pyc
 │   ├── function.py
 │   ├── preProduce.py
 │   ├── produce.py
-├── templates				# Layers, logo, layer styles and qgz templates
+├── templates			# Layers, logo, layer styles and qgz templates
 │   ├── _layer_styles		# Symbology in `*.qml` format
 │   │   ├── **/*.qml
-│   ├── _layers 			# World shapefile from GADM, Marine Regions, Global Lake
+│   ├── _layers 		# World shapefile from GADM, Marine Regions, Global Lake
 │   │   ├── **/*.shp
 │   │   ├── **/*.dbf
 │   │   ├── **/*.shx
 │   │   ├── **/*.prj
-│   ├── _logos				# VAM food security logo in various format
+│   ├── _logos			# VAM food security logo in various format
 │   │   ├── **/*.svg
 │   │   ├── **/*.png
 │   │   ├── **/*.jpg
-│   ├── _qgz				# QGIS project files for all the region
+│   ├── _qgz			# QGIS project files for all the region
 │   │   ├── **/*.qgz
-├── automap.py 				# Main python script to execute (to produce png maps)
-├── automapQGIS.yml			# yml file for creating the environment
-├── README.md 				# Readme file
+├── automap.py 			# Main python script to execute (to produce png maps)
+├── automapQGIS.yml		# yml file for creating the environment
+├── README.md 			# Readme file
 ```
 
 4. Download geospatial data from this link: https://www.dropbox.com/s/ptfdp1p9ltrvwwa/_layers.zip?dl=0
@@ -61,8 +60,7 @@ The code for calculating SPI is written in Python 3. It is recommended to use ei
 
 A new Anaconda [environment](https://conda.io/docs/using/envs.html) can be created using the [conda](https://conda.io/docs/) environment management system that comes packaged with Anaconda. 
 
-!!! note
-	This step must **only be done the first time**. Once the environment has been created there is no need to do it again.
+> This step must **only be done the first time**. Once the environment has been created there is no need to do it again.
 
 1. Navigate to `automap_RBB` folder in your Terminal or Command-Prompt
 2. Create the environment from the `automapQGIS.yml` file.
@@ -105,26 +103,22 @@ By default all `*.tif` files in the products folder will be mapped as `*.png` ma
 When running the script, 4 additional flags can be added:
 
 ``` bash
---select 			# A window with the available product types will appear so that the user can choose which products to map.
-					# By default all of the products are mapped
+--select 	# A window with the available product types will appear so that the user can choose which products to map.
+		# By default all of the products are mapped
 
---overwrite			# All the products will be mapped
-					# By default, only the products which are not present in the output folder will be mapped
+--overwrite	# All the products will be mapped
+		# By default, only the products which are not present in the output folder will be mapped
 
---input				# Select input folder with the .tiff files
-					# Default is automap_RBB/products
+--input		# Select input folder with the .tiff files
+		# Default is automap_RBB/products
 
---output 			# Select output folder for the PNG maps
-					# Default is automap_RBB/maps
+--output 	# Select output folder for the PNG maps
+		# Default is automap_RBB/maps
 ```
 
 **Example:**
 
-`python automap.py –-select --input`
-
-or
-
-`python automap.py --overwrite`
+`python automap.py –-select --input` or `python automap.py --overwrite`
 
 The user can **add a new product type**.
 
