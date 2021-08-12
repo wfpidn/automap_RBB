@@ -22,7 +22,7 @@ The code for calculating SPI is written in Python 3. It is recommended to use ei
 
 2. Download and install [QGIS](https://qgis.org/en/site/index.html) Long Term Release 3.16.8 on your machine for [macOS](https://qgis.org/downloads/macos/qgis-macos-ltr.dmg) or [Linux](https://qgis.org/en/site/forusers/alldownloads.html#linux) or [Windows](https://qgis.org/downloads/QGIS-OSGeo4W-3.16.8-4.msi).
 
-3. Download **automap_RBB** folder and it's content. The folder consist of:
+3. Download **automap_RBB** folder and it's content via this link: https://github.com/wfpidn/automap_RBB/archive/refs/heads/main.zip. The folder consist of:
 
 ``` bash
 ├── csv				# List of product, code for ach product and color ramp.
@@ -53,8 +53,9 @@ The code for calculating SPI is written in Python 3. It is recommended to use ei
 ├── README.md 			# Readme file
 ```
 
-4. Download geospatial data from this link: https://www.dropbox.com/s/ptfdp1p9ltrvwwa/_layers.zip?dl=0
-5. Extract above `zip` file and move the contents to `automap_RBB/templates/_layers`
+4. Extract it into your working directory, you will have `automap_RBB` folder.
+5. Download geospatial data from this link: https://www.dropbox.com/s/ptfdp1p9ltrvwwa/_layers.zip?dl=0
+6. Extract above `zip` file and move the contents to `automap_RBB/templates/_layers`
 
 ### Configure the python environment
 
@@ -128,6 +129,19 @@ The user can **add a new product type**.
 
 2. Create the associated color ramp (`.qml` file) and add it in `automap_RBB/templates/_layer_styles`
 
+## Example Maps
+
+**Region 1**
+
+![Region1](./maps/Region1/wldviq2021j193.png)
+
+**Region 2**
+
+![Region2](./maps/Region2/wldr4q202107d3.png)
+
+**Region 3**
+
+![Region1](./maps/Region3/wldr1h202107d3.png)
 
 ## Credits
 
