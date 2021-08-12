@@ -4,8 +4,8 @@ This is modified QGIS Automap from VAM HQ and adjusted for RBB Seasonal Monitor 
 
 Below is the list
 
-Region 1: TJK, KGZ, AFG and PAK
-Region 2: IND, BTN, NPL, BGD, LKA, MMR, THA, KHM, LAO, VNM, PHL and DPRK
+Region 1: TJK, KGZ, AFG and PAK<br>
+Region 2: IND, BTN, NPL, BGD, LKA, MMR, THA, KHM, LAO, VNM, PHL and DPRK<br>
 Region 3: IDN, TLS, PNG and SLB
 
 ## Setting up environment
