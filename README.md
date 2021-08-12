@@ -137,6 +137,8 @@ The user can **add a new product type**.
 
 **Region 2**
 
+![Region2](./maps/Region2/wldvim2021j193.png)
+
 ![Region2](./maps/Region2/wldr4q202107d3.png)
 
 **Region 3**
