@@ -20,7 +20,7 @@ The code for calculating SPI is written in Python 3. It is recommended to use ei
 
 > Or you can use [Miniconda](https://docs.conda.io/en/latest/miniconda.html) for [macOS](https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.pkg) or [Linux](https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh) and [Windows](https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86_64.exe). And follow the installation guideline for [macOS](https://conda.io/projects/conda/en/latest/user-guide/install/macos.html), [Linux](https://conda.io/projects/conda/en/latest/user-guide/install/linux.html) and [Windows](https://conda.io/projects/conda/en/latest/user-guide/install/windows.html)
 
-2. Download and install [QGIS](https://qgis.org/en/site/index.html) Long Term Release 3.16.8 on your machine for [macOS](https://qgis.org/downloads/macos/qgis-macos-ltr.dmg) or [Linux](https://qgis.org/en/site/forusers/alldownloads.html#linux) or [Windows](https://qgis.org/downloads/QGIS-OSGeo4W-3.16.8-4.msi).
+2. Download and install [QGIS](https://qgis.org/en/site/index.html) Long Term Release 3.16.8 on your machine for [macOS](https://qgis.org/downloads/macos/ltr/qgis_ltr_final-3_16_8_20210619_044746.dmg) or [Linux](https://qgis.org/en/site/forusers/alldownloads.html#linux) or [Windows](https://qgis.org/downloads/QGIS-OSGeo4W-3.16.8-4.msi).
 
 3. Download **automap_RBB** folder and it's content via this link: https://github.com/wfpidn/automap_RBB/archive/refs/heads/main.zip. The folder consist of:
 
