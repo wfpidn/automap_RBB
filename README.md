@@ -65,8 +65,10 @@ A new Anaconda [environment](https://conda.io/docs/using/envs.html) can be creat
 
 1. Navigate to `automap_RBB` folder in your Terminal or Command-Prompt
 2. Create the environment from the `automapQGIS.yml` file.
-3. Type `conda env create -f automapQGIS.yml`
-4. Activate the environment by typing `conda activate automapQGIS`
+
+	Type `conda env create -f automapQGIS.yml` then execute.
+
+3. Activate the environment by typing `conda activate automapQGIS` then execute.
 
 The environment now has been activated. The python scripts must be run inside this environment in order to work.
 
@@ -97,7 +99,7 @@ Alternative way, you can request to VAM HQ all the data in GeoTIFF format, no ne
 In your Terminal or Command-Prompt, navigate to the `automap_RBB` folder.
 Run the automap.py script by typing `python automap.py`
 
-By default all `*.tif` files in the products folder will be mapped as `*.png` maps in the `maps` folder. The maps will be stored in 3 different subfolders (Region1, Region2 and Region3) for each sub-region. 
+By default all `*.tif` files in the products folder will be mapped as `*.png` maps in the `maps` folder. The maps will be stored in 3 different subfolders (`Region1`, `Region2` and `Region3`) for each sub-region. 
 
 ## Options
 
